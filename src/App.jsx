@@ -1,16 +1,16 @@
-import './App.css'
-import RegistrationPage from './components/Registration/RegistrationPage'
+import './App.css';
+import Header from './components/Header'
+// import RegistrationPage from './components/Registration/RegistrationPage'
 
 function App() {
- 
-
   return (
     <>
-      <div className="App">
+      <Header />
+      {/* <div className="App">
         <RegistrationPage />
-      </div>
+      </div> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
