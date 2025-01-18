@@ -1,17 +1,11 @@
-import React from 'react'
-import { Container, Content } from './styles'
+import { Container, Content, StyledLink  } from './styles'
 import { 
   FaTimes, 
   FaHome, 
-  FaEnvelope, 
-  FaRegSun, 
-  FaUserAlt, 
   FaIdCardAlt, 
-  FaRegFileAlt,
-  FaRegCalendarAlt,
   FaChartBar
 } from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 import SidebarItem from '../SidebarItem'
 
 const Sidebar = ({ active }) => {
@@ -22,18 +16,19 @@ const Sidebar = ({ active }) => {
 
   return (
     <Container sidebar={active}>
-      <FaTimes onClick={closeSidebar} />  
-      <Content>
-        <SidebarItem Icon={FaHome} Text="Dashboard" />
+    <FaTimes onClick={closeSidebar} />  
+    <Content>
+      <SidebarItem Icon={FaHome} Text="Dashboard" />
+      <StyledLink to="/contas-pagar">
         <SidebarItem Icon={FaChartBar} Text="Cadastro de contas a pagar" />
+      </StyledLink>
+      <StyledLink to="/contas-receber">
         <SidebarItem Icon={FaChartBar} Text="Cadastro de contas a receber" />
-        <SidebarItem Icon={FaIdCardAlt} Text="Cadastro de clientes" />
-        <SidebarItem Icon={FaIdCardAlt} Text="Cadastro de fornecedores" />
-        {/* <SidebarItem Icon={FaIdCardAlt} Text="Employees" />
-        <SidebarItem Icon={FaRegFileAlt} Text="Reports" />
-        <SidebarItem Icon={FaRegSun} Text="Settings" /> */}
-      </Content>
-    </Container>
+      </StyledLink>
+      <SidebarItem Icon={FaIdCardAlt} Text="Cadastro de clientes" />
+      <SidebarItem Icon={FaIdCardAlt} Text="Cadastro de fornecedores" />
+    </Content> 
+  </Container>
   )
 }
 
