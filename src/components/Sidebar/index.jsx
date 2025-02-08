@@ -4,7 +4,8 @@ import {
   FaHome, 
   FaIdCardAlt, 
   FaChartBar,
-  FaBriefcaseMedical
+  FaBriefcaseMedical,
+  FaBuilding
 } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import SidebarItem from '../SidebarItem'
@@ -28,6 +29,9 @@ const Sidebar = ({ active }) => {
       </StyledLink>
       <SidebarItem Icon={FaIdCardAlt} Text="Cadastro de clientes" />
       <SidebarItem Icon={FaIdCardAlt} Text="Cadastro de fornecedores" />
+      <StyledLink to="/cadastro-banco">
+        <SidebarItem Icon={FaBuilding} Text ="Cadastro de bancos" />
+      </StyledLink>
       <StyledLink to="/emergency-savings">
         <SidebarItem Icon={FaBriefcaseMedical} Text ="Reserva de emergência" />
       </StyledLink>
