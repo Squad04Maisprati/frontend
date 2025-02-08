@@ -4,6 +4,8 @@
     padding: 3%;
     margin: 4% auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    margin-top: 150px !important;
 }
 
 .container h2 {
@@ -31,6 +33,13 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: #333;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .formulario-group-item:nth-child(3) {
@@ -47,6 +56,6 @@ button {
     grid-column: span 2;
     font-size: 16px;
     color: white;
-    background-color: #007bff;
+    background-color: #007bff !important;
     cursor: pointer;
 }

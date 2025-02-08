@@ -9,7 +9,7 @@ export const Container = styled.div`
   left: 0px;
   width: 300px;
   left: ${props => props.sidebar ? '0' : '-100%'};
-  animation: showSidebar .4s;
+  animation: showSidebar 0.4s;
 
   > svg {
     position: fixed;
@@ -35,6 +35,20 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   margin-top: 100px;
+`;
+
+export const ContentWrapper = styled.div`
+  max-height: calc(100vh - 100px); 
+  overflow-y: auto;  /* Permite rolagem vertical */
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color:#007bff;
+  }
+
 `;
 
 export const StyledLink = styled(Link)`

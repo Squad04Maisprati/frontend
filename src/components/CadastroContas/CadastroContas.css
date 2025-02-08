@@ -1,4 +1,4 @@
-.contas-pagar-container {
+.cadastro-contas-container {
     max-width: 500px;
     margin: 50px auto;
     padding: 20px;
@@ -7,46 +7,47 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 150px !important;
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
-  }
-  
-  .contas-pagar-form {
+    font-size: 2.5rem;
+}
+
+.cadastro-contas-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .campo {
+}
+
+.campo {
     display: flex;
     flex-direction: column;
-  }
-  
-  .campo label {
+}
+
+.campo label {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 1.2rem;
     color: #555;
-  }
-  
-  .campo input {
+}
+
+.campo input, .campo select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     color: #333;
-  }
-  
-  .campo input:focus {
+}
+
+.campo input:focus, .campo select:focus {
     border-color: #007bff;
     outline: none;
-  }
-  
-  .botao {
+}
+
+.botao {
     padding: 10px;
     background-color: #007bff;
     color: white;
@@ -54,9 +55,9 @@
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .botao:hover {
+    margin: 0 auto;
+}
+
+.botao:hover {
     background-color: #0056b3;
-  }
-  
+}

@@ -32,7 +32,7 @@ const ContasPagar = () => {
             name="descricao"
             value={formData.descricao}
             onChange={handleChange}
-            placeholder="Descrição da conta"
+            
             required
           />
         </div>
@@ -44,7 +44,7 @@ const ContasPagar = () => {
             name="valor"
             value={formData.valor}
             onChange={handleChange}
-            placeholder="Valor da conta"
+            
             required
           />
         </div>

@@ -4,7 +4,10 @@ export const Container = styled.div`
   height: 100px;
   display: flex;
   background-color: #0062ff; 
-  box-shadow: 0 0 20px 3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: fixed;
+  top: 0;
 
   > svg {
     position: fixed;
@@ -16,3 +19,5 @@ export const Container = styled.div`
     cursor: pointer;
   }
 `;
+
+

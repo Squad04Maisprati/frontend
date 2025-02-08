@@ -8,6 +8,7 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 150px !important;
   }
 
   h1 {
@@ -35,27 +36,26 @@
   
   label i {
     margin-right: 10px;
-    color: #4caf50;
+    color: #007bff;
   }
   
   input {
-    width: 100%;
     padding: 10px;
-    box-sizing: border-box;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    color: #555;
   }
   
   input:focus {
-    border-color: #4caf50;
+    border-color: #007bff;
+    outline: none;
   }
   
   button {
     padding: 12px 24px;
-    background-color: #4caf50;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 8px;
@@ -65,7 +65,7 @@
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
   }
   
   button i {
@@ -82,7 +82,7 @@
   }
   
   .resultado h2 {
-    color: #28a745;
+    color: #007bff;
     font-size: 1.7rem;
     margin-top: 10px;
   }
@@ -94,7 +94,7 @@
 
   .celebrar {
     background-color: #e8f5e9;
-    border: 2px solid #4caf50;
+    border: 2px solid #007bff;
   }
   
   .celebrar-animacao {
