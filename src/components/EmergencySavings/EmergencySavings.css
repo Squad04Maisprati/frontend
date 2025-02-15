@@ -11,15 +11,9 @@
     margin-top: 150px !important;
   }
 
-  h1 {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  h1 i {
+  h1 svg {
     margin-right: 10px;
-    color: #ff6f61;
+    color: #ff6f61; 
   }
   
   .form-group {
@@ -34,28 +28,29 @@
     color: #555;
   }
   
-  label i {
+  label svg {
     margin-right: 10px;
-    color: #007bff;
+    color: #4caf50; 
   }
   
   input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
     width: 100%;
-    color: #555;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
   }
   
   input:focus {
-    border-color: #007bff;
-    outline: none;
+    border-color: #4caf50;
   }
   
   button {
     padding: 12px 24px;
-    background-color: #007bff;
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 8px;
@@ -65,60 +60,34 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
   }
   
-  button i {
+  button svg {
     margin-right: 10px;
+    color: white; 
   }
-  
+
   .resultado {
     margin-top: 30px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
   }
   
   .resultado h2 {
-    color: #007bff;
-    font-size: 1.7rem;
-    margin-top: 10px;
+    color: #28a745;
+    font-size: 1.8rem;
   }
   
-  .resultado h2 i {
+  
+  .resultado h2 svg {
     margin-right: 10px;
-    color: #ff6f61;
+    color: #ffd000; 
   }
+  
 
-  .celebrar {
-    background-color: #e8f5e9;
-    border: 2px solid #007bff;
-  }
-  
-  .celebrar-animacao {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: #ff6f61;
-    animation: celebrar 2s infinite;
-  }
-  
-  @keyframes celebrar {
-    0% {
-      transform: translateX(-50%) translateY(0) rotate(0);
-    }
-    50% {
-      transform: translateX(-50%) translateY(-10px) rotate(10deg);
-    }
-    100% {
-      transform: translateX(-50%) translateY(0) rotate(0);
-    }
-  }
-  
-  .celebrar-animacao i {
-    margin: 0 10px;
+  button svg.fa-exclamation-triangle {
+    color: white; 
   }
