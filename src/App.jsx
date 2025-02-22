@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './components/Dashboard/Dashboard';
 import ContasPagar from './components/ContasPagar/ContasPagar';
 import ContasReceber from './components/ContasReceber/ContasReceber';
 import CadastroBanco from './components/CadastroBanco/CadastroBanco';
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/contas-pagar" element={<ContasPagar />} />
         <Route path="/contas-receber" element={<ContasReceber />} />
         <Route path="/cadastro-banco" element={<CadastroBanco />} />

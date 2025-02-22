@@ -21,7 +21,9 @@ const Sidebar = ({ active }) => {
       <FaTimes onClick={closeSidebar} />  
       <Content>
         <ContentWrapper>
-          <SidebarItem Icon={FaHome} Text="Dashboard" />
+          <StyledLink to="/dashboard">
+            <SidebarItem Icon={FaHome} Text="Dashboard" />
+          </StyledLink>
           <StyledLink to="/contas-pagar">
             <SidebarItem Icon={FaChartBar} Text="Cadastro de contas a pagar" />
           </StyledLink>
