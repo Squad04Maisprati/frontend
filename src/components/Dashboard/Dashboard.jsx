@@ -45,18 +45,6 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="grafico">
-        <h2>Top 5 Despesas por Categoria</h2>
-        <BarChart width={1100} height={400} data={dados.despesas}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="categoria" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Bar dataKey="valor" fill="#93E9BE" />
-        </BarChart>
-      </div>
-
       <div className="evolucao">
         <h2>Evolução Mensal: Despesas vs. Entradas</h2>
         <LineChart width={1100} height={400} data={dados.evolucaoMensal}>
@@ -68,18 +56,6 @@ function Dashboard() {
           <Line type="monotone" dataKey="despesas" stroke="#ff7300" />
           <Line type="monotone" dataKey="entradas" stroke="#387908" />
         </LineChart>
-      </div>
-
-      <div className="despesas">
-        <h2>Despesas por Categoria</h2>
-        <ul>
-          {dados.despesas.map((item, index) => (
-            <li key={index}>
-              <span>{item.categoria}</span>
-              <span>R$ {item.valor.toLocaleString()}</span>
-            </li>
-          ))}
-        </ul>
       </div>
 
       <div className="filtros">
