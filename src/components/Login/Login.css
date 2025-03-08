@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(0, 174, 255);
   }
 
 .main {
@@ -120,4 +119,98 @@
   
   .registerLink a:hover {
     text-decoration: underline;
-  }
+  } */
+
+  /* Container principal */
+.login-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 150px !important;
+}
+
+/* Título */
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Formulário */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.campo input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.campo input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Checkbox para exqueci a senha */
+.exqueci-senha {
+  text-align: left;
+  margin-top: -10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.exqueci-senha input {
+  margin-right: 5px;
+}
+
+/* Botão de login */
+.botao {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+/* Link para cadastro */
+.register-link {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register-link a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
