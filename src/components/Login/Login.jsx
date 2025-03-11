@@ -6,8 +6,16 @@ const Login = ({ setIsAuthenticated }) => {
   
   const handleLogin = (e) => {
     e.preventDefault();
-    setIsAuthenticated(true); // Define como autenticado
-    navigate('/dashboard'); // Redireciona para o Dashboard
+    setIsAuthenticated(true); 
+    navigate('/dashboard'); 
+  };
+
+  const handleRegisterRedirect = () => {
+    navigate('/register'); 
+  };
+
+  const handlePasswordForget = () => {
+    navigate('/password-recovery'); 
   };
 
   return (
@@ -36,16 +44,14 @@ const Login = ({ setIsAuthenticated }) => {
           />
         </div>
         
-        <div className="campo">
-          <label className="esqueci-senha"><br></br>
-          Esqueci a senha
-          </label>
+        <div className="register-link">
+          <p><a onClick={handlePasswordForget}>Esqueci a senha</a></p>
         </div>
 
         <button type="submit" className="botao">Entrar</button>
 
         <div className="register-link">
-          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+          <p>Não tem uma conta? <a onClick={handleRegisterRedirect}>Cadastre-se</a></p>
         </div>
       </form>
     </div>

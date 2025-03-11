@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./RegistrationPage.css"
 
 function RegistrationPage() {
@@ -15,6 +16,16 @@ function RegistrationPage() {
         alert("Enviando os dados: " + firstName + " - " + lastName + " - " + email + " - " + password + " - " + confirmPassword)
     }
 
+    const navigate = useNavigate();
+
+    const handleLoginRedirect = () => {
+      navigate('/'); 
+    };
+  
+    const handlePasswordForget = () => {
+      navigate('/password-recovery'); 
+    };
+    
   return (
     <div className="registration-container">
       <div className="registration-left">
@@ -45,8 +56,8 @@ function RegistrationPage() {
         <button type="submit" className="form-button">Criar Conta</button>
         <div class="separator"></div>
         <div className="form-links">
-            <a href="#" className="link">Esqueceu a senha?</a>
-            <a href="#" className="link">Já tem uma conta? Conecte-se!</a>
+            <a onClick={handlePasswordForget} className="link">Esqueceu a senha?</a>
+            <a onClick={handleLoginRedirect} className="link">Já tem uma conta? Conecte-se!</a>
         </div>
       </form>
       </div>

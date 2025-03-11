@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './PasswordRecovery.css'
 
 const PasswordRecovery = () => {
   const [email, setEmail] = useState('');
@@ -8,6 +10,13 @@ const PasswordRecovery = () => {
     
     console.log('Sending password recovery request for email:', email);
   };
+
+  const navigate = useNavigate();
+  
+  const handleLoginRedirect = () => {
+        navigate('/'); 
+  };
+    
 
   return (
     <div className="container">
@@ -26,7 +35,8 @@ const PasswordRecovery = () => {
           />
         </div>
         <button type="submit" className="button">Enviar</button>
-        <p className="forgot-password">Lembrou a sua senha?</p>
+        <div class="separator"></div>
+        <a onClick={handleLoginRedirect} className="link">Lembrou da senha? Conecte-se!</a>
       </form>
     </div>
   );
