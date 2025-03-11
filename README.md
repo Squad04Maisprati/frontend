@@ -78,6 +78,3 @@ Siga os passos abaixo para rodar o projeto localmente:
     /styles: Arquivos de estilização.
 
     /public: Arquivos estáticos, como imagens e o index.html. 
-
-
-![GitHub license](https://img.shields.io/github/license/Squad04Maisprati/frontend)
